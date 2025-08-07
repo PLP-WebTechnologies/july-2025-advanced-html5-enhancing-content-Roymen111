@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="HTML5 page with lists, tables, media, and a validated form." />
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Enhanced HTML5 Page</h1>
+        <p>This page demonstrates the use of lists, tables, media elements, and a complete HTML5 form with native validation.</p>
+    </header>
+
+    <main>
+
+        <!-- Section: Lists -->
+        <section>
+            <h2>📋 Features Overview</h2>
+            <ul>
+                <li>Semantic HTML5 structure</li>
+                <li>Responsive and accessible content</li>
+                <li>Native form validation</li>
+            </ul>
+
+            <h3>Top 3 HTML5 Elements</h3>
+            <ol>
+                <li>&lt;section&gt;</li>
+                <li>&lt;article&gt;</li>
+                <li>&lt;form&gt;</li>
+            </ol>
+        </section>
+
+        <!-- Section: Table -->
+        <section>
+            <h2>📊 Sample Course Schedule</h2>
+            <table border="1">
+                <caption>Weekly Coding Bootcamp</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML & Accessibility</td>
+                        <td>3 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>CSS Fundamentals</td>
+                        <td>4 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>HTML Forms & Validation</td>
+                        <td>2 Hours</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Media -->
+        <section>
+            <h2>🎧 Learn HTML5 Fast</h2>
+            <p>Listen to this short audio clip explaining the basics of semantic HTML:</p>
+            <audio controls>
+                <source src="html-intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>📷 Sample Image</h3>
+            <img src="https://via.placeholder.com/400x200" alt="Placeholder example image" width="400" height="200" />
+
+            <h3>🎬 Introductory Video</h3>
+            <video width="400" controls>
+                <source src="intro-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Section: Form -->
+        <section>
+            <h2>📨 Registration Form</h2>
+            <form action="#" method="POST" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required placeholder="name" minlength="3"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="email" autocomplete="email"><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 0775676767" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Setup</legend>
+
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required minlength="4" placeholder="Choose a username"><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="Create a password"><br><br>
+
+                    <label for="confirm">Confirm Password:</label><br>
+                    <input type="password" id="confirm" name="confirm" required minlength="6" placeholder="Re-enter password"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="course">Choose a course:</label><br>
+                    <select id="course" name="course" required>
+                        <option value="">--Select--</option>
+                        <option value="html">HTML Basics</option>
+                        <option value="css">CSS Design</option>
+                        <option value="js">JavaScript Intro</option>
+                    </select><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any special requests?"></textarea><br><br>
+
+                    <label>
+                        <input type="checkbox" name="agree" required> I agree to the terms and conditions
+                    </label><br><br>
+                </fieldset>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 roy. Built with semantic HTML5.</p>
+    </footer>
+
+</body>
+</html>
